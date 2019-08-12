@@ -13,10 +13,15 @@ exibir o log de movimentações de forma ordenada;
 
 Para a execução com sucesso da aplicação, é necessario seguir os passos abaixo:
 1 – Criar uma pasta no diretório C, criar a pasta com o nome workspaceigor
-2 – Abir o GitBash na pasta criada, fazer o clone do diretorio  https://gitlab.com/igorlps/backendtest na pasta criada.
+
+2 – Abir o GitBash na pasta criada, fazer o clone do diretorio https://github.com/IgorLPS/backendtest na pasta criada.
+
 3-  A aplicação foi desenvolvida em Java 8, é necessário verificar as variaveis de ambiente para obter sucesso nos proximos passos;
+
 4 – Abrir o prompt do MSDOS, digitar cd C:\workspaceigor\ backendtest\myMovements
+
 5 – Digitar no prompt de comando do MSDOS, compile.bat, executar o arquivo. O projeto java será compilado, gerado classes e o arquivo executavel .jar
+
 6 – Digitar no prompt e executar start.bar.
 Segue configurações Importantes:
 ENDPOINT_RECEBIMENTO = "https://my-json-server.typicode.com/cairano/backend-test/recebimentos";  Constante do Endpoint de recebimentos
@@ -26,17 +31,7 @@ ENDPOINT_PAGAMENTO = "https://my-json-server.typicode.com/cairano/backend-test/p
 ARQUIVO = "C://workspaceaccounttest//myMovements//dados.log";   Constante com o path com o arquivo log.
 •	Como delimitador foi utilizado o caractere “;”
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 Aplicação MinhasContas segue a arquitetura:
 
 View Swing, Console
