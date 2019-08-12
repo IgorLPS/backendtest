@@ -2,7 +2,7 @@
 
 Arquivo de Configuração MinhasContas
 
-Essa aplicação MinhasContas  tem objeto de disponibilizar as seguintes informações:
+Essa aplicação MinhasContas  tem objetivo de disponibilizar as seguintes informações:
 exibir o log de movimentações de forma ordenada;
 •	informar o total de gastos por categoria;
 •	informar qual categoria cliente gastou mais;
@@ -26,7 +26,16 @@ ENDPOINT_PAGAMENTO = "https://my-json-server.typicode.com/cairano/backend-test/p
 ARQUIVO = "C://workspaceaccounttest//myMovements//dados.log";   Constante com o path com o arquivo log.
 •	Como delimitador foi utilizado o caractere “;”
 
-  
+
+
+
+
+
+
+
+
+
+
 
 Aplicação MinhasContas segue a arquitetura:
 
@@ -60,3 +69,56 @@ Informações obtida na lista mergeLancamentos() que foi preenchida no metodo lo
 
 maxCategoria()
 Retorna um HashMap, com a categoria que mais teve gastos.
+ 
+gastosPorCategoria()
+Retorna um HashMap<String,Double>, com as categorias e o total de gastos das categorias.
+
+maxMes()
+Retorna HashMap com o nome do Mês e gasto do mês, o mês que teve mais gasto.
+
+gastosPorMes()
+Gastos por Mês, lista consolidade os meses e seus gastos.
+Utilizado para informar qual foi o mês que cliente mais gastou;
+
+totalGasto()
+Retorna um Double com o total de gasto do cliente.
+
+totalRecebido()
+Retorna um Double com o total recebido.
+
+saldoTotal()
+Retorna um double, que é o resultado do TotalRecebido – TotalGasto.
+
+configList()
+Retorna um lista de configurações.
+
+Service
+Classes Client do Ws rest.
+Classes que invocam a API Rest com informações de Recebimento e Pagamentos.
+
+File
+Classe que le arquivo .log
+
+Data
+Objeto que representa o response
+
+Dto
+Objeto para transferir dados da Facade até a View passando pela controller
+
+Util
+Classes para conversoes e padronizar dados
+
+Config
+Classe que armazena os dados de configurações:
+ENDPOINT_RECEBIMENTO = "https://my-json-server.typicode.com/cairano/backend-test/recebimentos";
+Constante do Endpoint de recebimentos
+
+ENDPOINT_PAGAMENTO = "https://my-json-server.typicode.com/cairano/backend-test/pagamentos";
+Constante do Endpoint de pagamentos
+
+
+
+ARQUIVO = "C://workspaceaccounttest//myMovements//dados.log";
+Constante com o path com o arquivo log.
+•	Como delimitador foi utilizado o caractere “;”
+
