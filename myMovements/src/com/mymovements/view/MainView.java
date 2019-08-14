@@ -214,7 +214,7 @@ public class MainView {
 	 */
 	public static void option5(LancamentoController controller) {
 		Double totalGasto = controller.totalGasto();
-		System.out.println("5 - Quanto que você gastou: \n" + totalGasto);
+		System.out.println("5 - Quanto que você gastou: \n" + LancamentoUtil.convertDoubleToView(totalGasto));
 	}
 
 	/**
@@ -223,7 +223,7 @@ public class MainView {
 	 */
 	public static void option6(LancamentoController controller) {
 		Double totalRecebido = controller.totalRecebido();
-		System.out.println("6 - Quanto que você recebeu: \n" + totalRecebido);
+		System.out.println("6 - Quanto que você recebeu: \n" + LancamentoUtil.convertDoubleToView(totalRecebido));
 	}
 
 	/**
@@ -232,7 +232,7 @@ public class MainView {
 	 */
 	public static void option7(LancamentoController controller) {
 		Double saldoTotal = controller.saldoTotal();
-		System.out.println("7 - Saldo total de movimentações: \n" + saldoTotal);
+		System.out.println("7 - Saldo total de movimentações: \n" + LancamentoUtil.convertDoubleToView(saldoTotal));
 	}
 
 	/**
